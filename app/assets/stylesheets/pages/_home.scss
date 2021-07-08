@@ -68,8 +68,16 @@ nav {
   border-radius: 3px;
 }
 
-.map {
-  height: 350px;
+.flat-show-card .material-icons {
+  margin-right: 5px;
+}
+
+.flat-show-card span {
+  margin-right: 10px;
+}
+
+.banner {
+  height: 400px;
   background-position: center;
   background-size: cover;
 }
@@ -81,8 +89,20 @@ nav {
   margin-bottom: 0;
 }
 
+.flex .fa {
+  margin-right: 5px;
+}
+
 .flat-show-address {
   font-weight: 300;
   font-size: 20px;
   color: #333;
+}
+
+#basic-addon1 {
+  background-color: #E9ECEF;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #bfb9b9;
+  margin: 0;
 }
