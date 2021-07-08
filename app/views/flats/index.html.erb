@@ -1,7 +1,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12">
-      <h1>All our Flats</h1>
+      <h1>All our Flats (<%= Flat.count %>)</h1>
     </div>
   </div>
 
@@ -9,8 +9,6 @@
     <div class="col">
       <% if @query %>
         <p>You searched for <strong><%= @query %></strong>. We found <%= @flats.count %> flats out of our <%= Flat.count %> on our website.</p>
-      <% else %>
-        <p>All <%= Flat.count %> flats.</p>
       <% end %>
     </div>
   </div>
@@ -30,7 +28,7 @@
                 <i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
               </div>
               <div class="flex ml-3">
-                <i class="material-icons mr-2">euro_symbol</i> <%= flat.price_per_night %>
+                <i class="material-icons mr-2">euro_symbol</i> <span><%= flat.price_per_night %></span>
               </div>
             </div>
           </div>
